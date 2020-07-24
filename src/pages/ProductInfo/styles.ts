@@ -11,11 +11,12 @@ export const Container = styled.div`
 
   @media (max-width: 898px) {
     min-height: 550px;
+    padding-top: 130px;
   }
 
   @media (max-width: 558px) {
     height: fit-content;
-    padding: 20px;
+    padding: 130px 20px 20px;
   }
 `;
 
@@ -84,6 +85,7 @@ export const UnknownPokemon = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align:center;
 
   h3 {
     font-size: 30px;

@@ -68,7 +68,7 @@ const ProductInfo: React.FC = () => {
         setHavePokemon(true);
       })
       .catch((err) => {
-        setHavePokemon(false);
+        setWasLoadedInfo(true);
         setHavePokemon(false);
       })
   }, []);
