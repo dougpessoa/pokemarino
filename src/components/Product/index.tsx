@@ -18,7 +18,6 @@ export interface ClassCSSProps {
 type Props = IPokemonProps & ClassCSSProps;
 
 const Product: React.FC<Props> = ({ 
-  id,
   name,
   image,
   price,
@@ -43,13 +42,13 @@ const Product: React.FC<Props> = ({
           </Title>
           <Price>
             <strong>
-              R${formatPriceToBrazilian(price)}
+              {formatPriceToBrazilian(price)}
             </strong>
             <span>
               12x de R${installmentAmount}
             </span>
             <small>
-              5% de cashback R${calculateCashback(price)}
+              5% de cashback {calculateCashback(price)}
             </small>
           </Price>
         </Info>
